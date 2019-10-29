@@ -1,0 +1,141 @@
+nav {
+    padding-top: -30px;
+    height: 55px;
+    background-color: black;
+    opacity: 80%;
+}
+
+
+.container {
+    margin: 0;
+    height: 20px;
+    margin-top: -16px;
+    margin-left: -16px;
+    width: 100vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+a {
+    font-family: 'IM Fell Double Pica SC', serif;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #91AF69;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 100px;
+
+}
+
+li {
+    text-decoration: none;
+    color: white; 
+    padding: 5px;
+    margin-top: -50px;
+}
+
+body {
+    font-family: baskerville;
+}
+
+.hero {
+    display: flex;
+    margin-left: -16px;
+    margin-top: -30px;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+}
+
+/* hero section */
+
+.house {
+    display: flex;
+    justify-content: flex-start;
+    align
+    order: 1;
+    width: 50vw;
+}
+
+.forest {
+    display: flex;
+    justify-content: flex-end;
+    order: 2;
+    width: 50vw;
+}
+
+.graves {
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    width: 50vw;
+}
+
+/* form  */
+
+.reserve {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* details */
+
+.details {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-height: 40px;
+    color: #B9B9B9;
+    margin-top: -33;
+}
+
+footer .logo{
+    height: 20px;
+    width: 20px;
+    margin: 0;
+}
+
+footer .copyright {
+    height: 10px;
+    width: 10px;
+    padding: 2px;
+}
+
+footer p {
+    font-size: 12px;
+    padding-top: 15px
+}

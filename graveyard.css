@@ -1,10 +1,40 @@
+body {
+    font-family: baskerville;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'IM Fell Double Pica SC', serif;
+}
+
+h2 {
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 17px;
+    font-weight: 400px;
+}
+
+/* header */
+
 nav {
     padding-top: -30px;
     height: 55px;
     background-color: black;
     opacity: 80%;
+    color: white;
 }
-
 
 .container {
     margin: 0;
@@ -45,71 +75,193 @@ ul {
 
 }
 
-li {
+.nav li {
     text-decoration: none;
     color: white; 
     padding: 5px;
     margin-top: -50px;
 }
 
-body {
-    font-family: baskerville;
-}
+/* hero section */
 
 .hero {
-    display: flex;
     margin-left: -16px;
-    margin-top: -30px;
+    margin-bottom: -150px;
+    display: grid;
+    grid-template-areas: 
+    'house forest'
+    'house graves'
+    ;
 }
 
-h1 {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-start;
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
+.hero img {
+    width: 100%;
+    height: auto;
 }
-
-/* hero section */
 
 .house {
     display: flex;
-    justify-content: flex-start;
-    align
-    order: 1;
-    width: 50vw;
+    flex-grow: 2;
+    grid-area: house;
+    height: auto;
 }
 
 .forest {
     display: flex;
-    justify-content: flex-end;
-    order: 2;
-    width: 50vw;
+    flex-grow: 1;
+    height: auto;
+    grid-area: forest
 }
 
 .graves {
     display: flex;
-    justify-content: flex-end;
-    order: 3;
-    width: 50vw;
+    flex-grow: 1;
+    height: auto;
+    grid-area: graves;
+    margin-top: -50px;
+}
+
+.hero h1 {
+    position: relative;
+    bottom: 130px;
+    left: -20px;
 }
 
 /* form  */
 
-.reserve {
+form {
+    margin-top: -40px;
     display: flex;
     justify-content: flex-end;
+    align-content: flex-end;
+    margin-left: 1050px;
+}
 
+form .div {
+    display: flex;
+    /* justify-content: flex-end;
+    align-content: flex-end; */
+}
+.reserve {
+    width: 30%;
+    padding: 15px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserve h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.reserve img {
+    width: 15px;
+    height: 15px;
+}
+
+.reviews {
+    color: #B9B9B9;  
+}
+
+.reserve input { 
+    border-radius: 2px;
+    border: 1px solid #BABABA;
+    text-align: center;
+    height: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.checkin {
+    width: 100px;
+    height: 30px;
+}
+
+.checkout {
+    width: 100px;
+    height: 30px;
+}
+
+.reserve table {
+    margin: 10px;
+}
+
+.reserve button {
+    display: flex;
+    justify-content: center;
+    background-color: #7f995d;
+    color: white;
+    font-family: Baskerville;
+    height: 30px;
+    margin: 2px;
+    border-radius: 4px;
+    border: none;
+    padding: 0;
+}
+
+.reserve_manor:hover {
+    background-color: #34471b;
+} 
+
+
+/* main */
+
+.minor_details{
+    color: black;
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* details */
 
 .details {
-    display: flex;
-    justify-content: flex-start;
+    margin-top: -500px;
 }
 
+.features img {
+     height: 30px;
+     width: 30px;
+}
 
+.details img {
+    padding-right: 8px;
+}
+
+.details p {
+    margin-left: 20px;
+    margin-top: -16px;
+    max-width: 700px;
+}
+
+.amenities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+hr {
+    max-width: 700px;
+    margin-left: 16px;
+}
+
+.amenities img{
+    height: 30px;
+    width: 30px;
+}
+
+.amenities img {
+    padding-right: 8px;
+}
 
 /* footer */
 

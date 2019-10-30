@@ -111,11 +111,15 @@ li {
     height: auto;
 }
 
+.hero img:hover {
+    transform: scale(1.3); 
+}
+
 .house {
     display: flex;
     flex-grow: 2;
     grid-area: house;
-    height: auto;
+    width: auto;
 }
 
 .road {

@@ -1,8 +1,50 @@
+body {
+    font-family: baskerville;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'IM Fell Double Pica SC', serif;
+}
+
+h2 {
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 17px;
+    font-weight: 400px;
+}
+
+/* header */
+
 nav {
     padding-top: -30px;
+    margin-right: -20px;
     height: 55px;
-    background-color: black;
+    background-color: #B9B9B9;
     opacity: 80%;
+    color: black;
+}
+
+nav li {
+    top: 90px;
+}
+
+header {
+    width: 100vw;
+    background-color: #B9B9B9;
 }
 
 .container {
@@ -26,11 +68,11 @@ nav {
 a {
     font-family: 'IM Fell Double Pica SC', serif;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:hover {
-    color: #91AF69;
+    color: #34471b;
 }
 
 ul {
@@ -46,20 +88,181 @@ ul {
 
 li {
     text-decoration: none;
-    color: white; 
+    color: black; 
     padding: 5px;
     margin-top: -50px;
 }
 
-body {
-    font-family: baskerville;
-}
+/* hero section */
 
 .hero {
     margin-left: -16px;
-    margin-top: -30px;
+    margin-bottom: -150px;
+    margin-right: -20px;
+    display: grid;
+    grid-template-areas: 
+    'house road'
+    'house seance'
+    ;
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.house {
+    display: flex;
+    flex-grow: 2;
+    grid-area: house;
+    height: auto;
+}
+
+.road {
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+    grid-area: road
+}
+
+.seance {
+    display: flex;
+    flex-grow: 1;
+    height: auto;
+    grid-area: seance;
+    margin-top: -50px;
+}
+
+.hero h1 {
+    position: relative;
+    bottom: 130px;
+    left: -20px;
+}
+
+/* form  */
+
+form {
+    margin-top: -40px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-left: 950px;
+}
+
+.reserve {
+    width: 30%;
+    padding: 15px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserve h4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.reserve img {
+    width: 15px;
+    height: 15px;
+}
+
+.reviews {
+    color: #B9B9B9;  
+}
+
+.reserve input { 
+    border-radius: 2px;
+    border: 1px solid #BABABA;
+    text-align: center;
+    height: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.checkin {
+    width: 100px;
+    height: 30px;
+}
+
+.checkout {
+    width: 100px;
+    height: 30px;
+}
+
+.reserve table {
+    margin: 10px;
+}
+
+.reserve button {
+    display: flex;
+    justify-content: center;
+    background-color: #7f995d;
+    color: white;
+    font-family: Baskerville;
+    height: 30px;
+    margin: 2px;
+    border-radius: 4px;
+    border: none;
+    padding: 0;
+}
+
+.reserve_manor:hover {
+    background-color: #34471b;
+} 
+
+
+/* details */
+
+.details {
+    margin-top: -500px;
+}
+
+.features img {
+     height: 30px;
+     width: 30px;
+}
+
+.details img {
+    padding-right: 8px;
+}
+
+.details p {
+    margin-left: 20px;
+    margin-top: -16px;
+    max-width: 700px;
+}
+
+.amenities {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+hr {
+    max-width: 700px;
+    margin-left: 16px;
+}
+
+.amenities img{
+    height: 30px;
+    width: 30px;
+}
+
+.amenities img {
+    padding-right: 8px;
+}
+
+/* footer */
 
 footer {
     display: flex;
@@ -86,4 +289,151 @@ footer .copyright {
 footer p {
     font-size: 12px;
     padding-top: 15px
+}
+
+@media (max-width: 1050px){
+
+    h2 {
+        margin-left: 15px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    form {
+        margin-left: 880px;
+        margin-top: -50px;
+    }
+    
+    p {
+        margin-left: 20px;
+    }
+
+    .details {
+        max-width: 600px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+
+    h1 {
+        margin-left: 48px;
+        font-size: 40px;
+        margin-bottom: -10px
+    }
+
+    h2{
+        font-size: 20px;
+        margin-left: 14px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+
+    li {
+        margin-left: 15px;
+    }
+
+    .hero {
+        margin-bottom: -60px;
+        grid-template-areas: 
+        'house house'
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .house{
+        max-width: 100wh;
+        grid-area: house;
+    }
+    .road {
+        display: none;
+    }
+
+    .seance {
+        display: none;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    .reserve {
+        margin: auto;
+    }
+
+    .details {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+
+    .dates {
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 420px){
+
+    h1 {
+        margin-left: 30px;
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+
+    .hero {
+        margin-bottom: -100px;
+        grid-template-areas: 
+        'house house'
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .house{
+        max-width: 100wh;
+        grid-area: house;
+    }
+    .road {
+        display: none;
+    }
+
+    .seance {
+        display: none;
+    }
+
+    form {
+        margin: 0 auto;
+    }
+
+    .reserve {
+        margin: auto;
+    }
+
+    .details {
+        margin-top: 80px;
+    }
+
 }

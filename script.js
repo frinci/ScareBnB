@@ -27,6 +27,8 @@ let ghoulsNum = document.querySelector('.ghouls_number')
 
 let inputPrice = document.querySelector(".input_price")
 
+let homeButton = document.querySelector(".logo")
+
 //event listeners and helper functions
 
 // function changeSecluded(event) {
@@ -99,4 +101,16 @@ const reserveManor = () => {
     reserveButton.addEventListener('click', bookingComplete)
 }
 
+
 reserveManor()
+
+function goHome(event){
+    event.preventDefault();
+    window.open("home.html")
+}
+
+const homeClick = () => {
+    homeButton.addEventListener("click", goHome)
+}
+
+homeClick()

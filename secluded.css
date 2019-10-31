@@ -98,7 +98,7 @@ li {
 .hero {
     margin-left: -16px;
     margin-bottom: -150px;
-    margin-right: -20px;
+    margin-right: -90px;
     display: grid;
     grid-template-areas: 
     'house road'
@@ -112,7 +112,7 @@ li {
 }
 
 .hero img:hover {
-    transform: scale(1.3); 
+    transform: scale(1.1); 
 }
 
 .house {

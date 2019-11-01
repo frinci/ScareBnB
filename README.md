@@ -1,5 +1,4 @@
 # ScareBnB
-Made with HTML, CSS, and vanilla JavaScript
 ![ScareBnb Video](photos/scareBnb_wireframe.gif)
 
 ## ScareBnb Description
@@ -29,3 +28,5 @@ After completing my MVP, I decided to integrate a flip feature to add functional
 Going forward, I'd like to add a couple more divs to the main page. In my mockups, I had six different divs, in three sections on the homepage. While creating my site's, I decided to simplify in order to create the best looking product in the amount of time I was given. 
 
 I would also like to be able to manage the input values across all pages so that the amount of ghouls visiting and the checkin/out dates sync across all forms, but can also be edited. 
+
+Made with HTML, CSS, and vanilla JavaScript

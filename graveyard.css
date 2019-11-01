@@ -31,7 +31,7 @@ h5 {
 nav {
     padding-top: -30px;
     margin-right: -20px;
-    height: 55px;
+    height: 70px;
     background-color: black;
     opacity: 80%;
     color: white;
@@ -149,7 +149,7 @@ form {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
-    margin-left: 950px;
+    margin-left: 1050px;
 }
 
 .reserve {
@@ -239,7 +239,7 @@ form {
 }
 
 .details p {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: -16px;
     max-width: 700px;
 }

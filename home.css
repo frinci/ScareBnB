@@ -309,9 +309,9 @@ h4 {
 
 .adventures_back p{
     margin: 15px;
-    color: black
+    color: black;
     direction: rtl;
-;}
+}
 
 .adventures_back h4 {
     color: black

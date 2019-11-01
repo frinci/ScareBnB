@@ -21,7 +21,7 @@ function reservationComplete(event){
 
 function goHome(event){
     event.preventDefault();
-    window.open("home.html")
+    window.open("index.html")
 }
 
 // even listeners

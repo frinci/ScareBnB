@@ -29,4 +29,4 @@ Going forward, I'd like to add a couple more divs to the main page. In my mockup
 
 I would also like to be able to manage the input values across all pages so that the amount of ghouls visiting and the checkin/out dates sync across all forms, but can also be edited. 
 
-Made with HTML, CSS, and vanilla JavaScript
+Made with HTML, CSS, and vanilla JavaScript.

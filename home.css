@@ -199,12 +199,10 @@ h4 {
 
 .top div {
     height: 200px;
-    width: 500px;
+    width: 300px;
     margin: 20px;
-}
-
-.experiences{
-    position:relative;
+    margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 .experiences h4{
@@ -216,10 +214,10 @@ h4 {
 
 /* first flip */
 
-.flip_containter1 {
+.flip_container1 {
     background-color: transparent;
     height: 200px;
-    width: 500px;
+    width: 300px;
     perspective: 1000px;
 }
 
@@ -231,40 +229,151 @@ h4 {
     transform-style: preserve-3d;
 }
 
-.flip_containter1 .inner_card1 {
+.flip_container1:hover .inner_card1 {
     transform: rotateY(180deg)
 }
 
-.experiences_back {
-    background-color: #34471b;
-    transform: rotateY(180deg);
-    border-radius: 8px;
-    height: 200px;
-;}
-
-.experiences .experiences_back{
+.experiences {
     position: absolute; 
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
 
-.adventures h4{
+.experiences_back{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #34471b;
+    transform: rotateY(180deg);
+    text-align: left;
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+}
+
+.experiences_back p{
+    margin: 15px;
+    color: white;
+    direction: rtl;
+;}
+
+/* second flip */
+
+.adventures h4 {
     position:absolute;
     z-index:1;
     color: black;
 }
 
+.flip_container2 {
+    background-color: transparent;
+    height: 200px;
+    width: 300px;
+    perspective: 1000px;
+}
+
+.inner_card2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_container2:hover .inner_card2 {
+    transform: rotateY(180deg)
+}
+
+.adventures {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.adventures_back{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #91AF69;
+    color: black;
+    transform: rotateY(180deg);
+    text-align: left;
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+}
+
+.adventures_back p{
+    margin: 15px;
+    color: black
+    direction: rtl;
+;}
+
+.adventures_back h4 {
+    color: black
+}
+
+/* third flip */
 .restaurants h4{
     position:absolute;
     z-index:5;
+}
+
+.flip_container3 {
+    background-color: transparent;
+    height: 200px;
+    width: 300px;
+    perspective: 1000px;
+}
+
+.inner_card3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip_container3:hover .inner_card3 {
+    transform: rotateY(180deg)
+}
+
+.restaurants {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.restaurants_back{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #34471b;
+    transform: rotateY(180deg);
+    color: white;
+    text-align: left;
+    border-radius: 8px;
+    height: 200px;
+    width: 300px;
+}
+
+.restaurants p {
+    margin-left: 20px;
+    color: white;
+    direction: rtl;
 }
 
 /* second section */
 
 .middle_hero {
     max-width: 100vw;
-    margin-bottom: -425px;
+    margin-bottom: -505px;
 }
 
 .box_overlay {
